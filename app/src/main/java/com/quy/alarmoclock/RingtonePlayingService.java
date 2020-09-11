@@ -16,6 +16,13 @@ public class RingtonePlayingService extends Service {
     private static final String NOTIFICATION_CHANNEL_ID = "10101";
     private static final CharSequence NOTIFICATION_CHANNEL_NAME = "APPOCLOCK" ;
     MediaPlayer mediaPlayer;
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        startForeground(11,new Notification());
+    }
+
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
