@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TimePicker
+        android:id="@+id/AlarmTimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnStartAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Alarm"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/AlarmTimePicker"/>
+
+
+    <Button
+        android:id="@+id/btnStopAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Alarm"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/AlarmTimePicker"/>
+
+    <TextView
+        android:id="@+id/update_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you Okay?"
+        android:layout_below="@+id/btnStopAlarm"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textSize="20dp"/>
+
+
+</RelativeLayout>
